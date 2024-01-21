@@ -1,191 +1,513 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Jane Doe - Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shella Youdgeny Dasse software developer - Portfolio</title>
     <link rel="stylesheet" href="./style.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./script.js"></script>
   </head>
-  <body>
+
+
+  <body data-aos-easing="ease" data-aos-duration="1200" data-aos-delay="0" data-new-gr-c-s-check-loaded="14.1148.0" data-gr-ext-installed="" >
+
+    
+
     <!-- Navigation Bar -->
     <nav>
       <div id="home">
-        <div class="profile_name">
-   Miss Pouloune
-          <div class="contact_info">
-            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
-          jdoe@jeemail.com
-        </div>
-        <div style="clear:both;"></div>
-        <div class="contact_info">
-          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
-          +13456764598
 
+        <div class="profile_name" data-aos="fade-down" data-aos-delay="200">
+          Syd's portfolio 
         </div>
-        </div>
-        <div class="topdiv">
-          <a class="topmenu" href="#about-me">About Me</a>
+
+       <div class="leftNav">
+        <div class="navbar-toggle" id="navbarToggle">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+      </div> 
+        <div class="topdiv" id="navbarLinks">
+          <a class="topmenu" href="#about">About</a>
           <a class="topmenu" href="#skills">Skills</a>
           <a class="topmenu" href="#projects">Projects</a>
-          <a class="topmenu" href="#recommendations">Recommendation</a>
+          <a class="topmenu" href="#recommendations">Contact</a>
           <!-- Add the links for Skills, Projects and Recommendation here -->
-
         </div>
-      </div>    
+
+
+        
+    </div>  
+      
+    </div>
+
     </nav>
 
-    <!-- About Me -->
-    <section id="about-me" class="container">
-      <div>
-        <img src="https://media.giphy.com/media/wwgamp8bOsx8byvKTi/giphy.gif" class="profile_image"/>
+     <!-- Presentation -->
+
+     <section >
+
+      <div id="Presentation">
+
+    
+      <div id="leftPres">
+       
+        <div class="tag-wrapper">
+            <div id="chip">
+                <span id="tag-label" class="label tag-title">Full Stack Flutter Expert</span>
+            </div>
+        </div>
+        <div class="name">
+        <h1 id="firstName">
+          Shella Youdgeny
+        </h1>
+        <h1 id="lastName">
+       Dasse
+        </h1>
+        </div>
+        <div class="tag">
+          
+            <img src="html_finalprojimages/play.png" height="18px" width="18px"/>
+        
+          <span id="tag" class="txt-type" data-wait="1000ms" data-words="[&quot;Full Stack Developer&quot;, &quot;Startup Enthusiast&quot;, &quot;A Friend!&quot;, &quot;Collaborator&quot;, &quot;A Forever Student&quot;]">
+            <span class="txt"></span>
+            <span class="cursor"></span>
+          </span>
+        </div>
+        <div id="social-handles" class="flexbox-container">
+          <div class="dash"></div>
+          <a class="social-icon-wrapper" id="linkedin" href="https://linkedin.com/in/shella-youdgeny-dasse-408b28176" target="_blank"> 
+           
+          </a>
+          <a class="social-icon-wrapper" id="github" href="https://github.com/Pouloune" target="_blank">
+          
+          </a>
+        
+          <a id="facebook" class="social-icon-wrapper" href="https://facebook.com/shellayoudgenymoupounedasse/" target="_blank">
+          </a>
+          <a id="instagram" class="social-icon-wrapper" href="https://instagram.com/miss_pouloune" target="_blank">
+          </a>
+          <a id="x" class="social-icon-wrapper" href="https://x.com/MPouloune" target="_blank">
+          </a>
+        </div>
+        <div class="chat">
+          <a href="#contact-div" class="body2" id="chat-btn">LET'S CHAT!</a>
+       </div>
       </div>
 
-      <div>
-          <h1>
-            Hi, I'm Miss Pouloune! <img src="https://media.giphy.com/media/p9q8VwOEs8qfmDr7hK/giphy.gif" width="60px"/>
-          </h1>
-          <p>
-            I'm  a dedicated full stack developer. 
-            I specialize in creating seamless web experiences, combining my expertise in both front-end and back-end technologies. 
-            With a passion for clean code and innovative solutions, I thrive on turning ideas into functional, user-friendly applications. 
+    <div id="rightPres">
+      <div  class="grad-circle">
+        <img src="html_finalprojimages/me.png" id="me"/>
+    </div>
+  </div>
+
+    </div>
+
+     </section>
+
+      
+
+
+ <!-- About Me -->
+
+
+     <section id="about" class="container">
+     
+     <div class="about-text">
+          <p id="about-me-title">About Me</p>
+
+          <h1 id="about-me-heading">Hello there! My name is Shella <img src="https://media.giphy.com/media/p9q8VwOEs8qfmDr7hK/giphy.gif" width="40px"/></h1>
+
+          <p id="about-quote">
+              “If you are not going to tell the world who you are, the world is not going
+              to tell you, how good you are.”
+          </p>
+
+          <p id="about-me-text">I'm a Self-taught and dedicated full stack developer. 
+            I specialize in creating seamless web experiences, combining my expertise in 
+            both front-end and back-end technologies. With a passion for clean code and innovative 
+            solutions, I thrive on turning ideas into functional, user-friendly applications. 
             Let's build something amazing together!
           </p>
+
+          <div class="download-resume">
+              <button type="button" onclick="downloadResume()" class="btn btn-success" id="download-btn">
+                  
+                    <img src="html_finalprojimages/file-text.svg" alt="file-text">
+                  
+                  <span style="color: black; background-color: transparent; font-size: 14px; padding-left: 8px;">Download
+                      Resume</span>
+              </button>
+          </div>
       </div>
     </section>
-              
-    <!-- Skills -->
-    <section id="skills">
-      <h2>Skills</h2>
-      <div style="clear:both;"></div>
 
-      <div class="all_skills">
-        <div class="skill">
-          <img src="html_finalprojimages/html5.png"/>
-          <h6>HTML</h6>
-          <p>2 years experience</p>
-        </div>  
+<!-- Tech skills -->
+    <section id="tech" class=" tech-stack">
+      <div class="tech-stack-detail">
+          <p id="tech-stack-title">Tech Stack</p>
+          <p id="tech-stack-text">
+              Change is inevitable, so I keep on exploring new technology,
+              learn it in a minimal possible way and then build something
+              out of it to see how well I did :)
+          </p>
 
-        <div class="skill">
-          <img src="html_finalprojimages/js.jpeg"/>
-          <h6>JavaScript</h6>
-          <p>3 years experience</p>
-        </div>  
+          <p class="label-stack">Mobile development</p>
+          <div id="mobile-tech" data-aos="fade-right" data-aos-delay="200" class="tech-row aos-init aos-animate">
+            <div class="tech">
+              <img class="tech-icon" src="html_finalprojimages/flutter.svg" alt="Flutter">
+              <span class="tech-label">Flutter</span>
+            </div>
+            <div class="tech">
+              <img class="tech-icon" src="html_finalprojimages/dart.svg" alt="Dart">
+              <span class="tech-label">Dart</span>
+            </div>
+          </div>
 
-        <div class="skill">
-            <img src="html_finalprojimages/CSS3.png"/>
-            <h6>CSS3</h6>
-            <p>3 years experience</p>
-          </div>  
+          <p class="label-stack">Web development</p>
+          <div id="web-tech" data-aos="fade-right" data-aos-delay="300" class="tech-row aos-init aos-animate">
+            <div class="tech">
+              <img class="tech-icon" src="html_finalprojimages/html.svg" alt="HTML 5">
+              <span class="tech-label">HTML 5</span>
+            </div>
+            <div class="tech">
+              <img class="tech-icon" src="html_finalprojimages/css.svg" alt="CSS 3">
+              <span class="tech-label">CSS 3</span>
+            </div><div class="tech">
+              <img class="tech-icon" src="html_finalprojimages/react.svg" alt="Bootstrap">
+              <span class="tech-label">React</span>
+            </div>
+            <div class="tech">
+              <img class="tech-icon" src="html_finalprojimages/js.svg" alt="Javascript">
+              <span class="tech-label">Javascript</span>
+            </div>
+            
+          </div>
 
-          <div class="skill">
-            <img src="html_finalprojimages/java.png"/>
-            <h6>Java</h6>
-            <p>4 years experience</p>
-          </div>  
+          <p class="label-stack">Server side</p>
+          <div id="server-tech" data-aos="fade-right" data-aos-delay="400" class="tech-row aos-init aos-animate">
+            <div class="tech">
+              <img class="tech-icon" src="html_finalprojimages/node.svg" alt="Node.js" style="height: 25px;">
+              <span class="tech-label">Node.js</span>
+            </div>
+            <div class="tech">
+              <img class="tech-icon" src="html_finalprojimages/express.svg" alt="Express.js">
+              <span class="tech-label">Express.js</span>
+            </div>
+            <div class="tech">
+              <img class="tech-icon" src="html_finalprojimages/api.svg" alt="REST APIs">
+              <span class="tech-label">REST APIs</span>
+            </div>
+          </div>
 
-        <div class="skill">
-            <img src="html_finalprojimages/react.png"/>
-            <h6>react</h6>
-            <p>3 years experience</p>
-          </div>  
+          <p class="label-stack">Databases</p>
+          <div id="database-tech" data-aos="fade-right" data-aos-delay="500" class="tech-row aos-init aos-animate">
+            <div class="tech">
+              <img class="tech-icon" src="html_finalprojimages/firebase.svg" alt="Firebase">
+              <span class="tech-label">Firebase</span>
+            </div>
+            <div class="tech">
+              <img class="tech-icon" src="html_finalprojimages//mongo.svg" alt="MongoDB">
+              <span class="tech-label">MongoDB</span>
+            </div>
+            <div class="tech">
+              <img class="tech-icon" src="html_finalprojimages/postgresql-svg.svg" alt="Postgres SQL">
+              <span class="tech-label">Postgres SQL</span>
+            </div>
+          </div>
 
+          <p class="label-stack">Version controlloing &amp; management</p>
+          <div id="vc-tech" data-aos="fade-right" data-aos-delay="600" class="tech-row aos-init aos-animate">
+            <div class="tech">
+              <img class="tech-icon" src="html_finalprojimages/github1.svg" alt="GitHub">
+              <span class="tech-label">GitHub</span>
+            </div>
+            <div class="tech">
+              <img class="tech-icon" src="html_finalprojimages/zenhub.svg" alt="Zenhub">
+              <span class="tech-label">Zenhub</span>
+            </div>
+            <div class="tech">
+              <img class="tech-icon" src="html_finalprojimages/trello.svg" alt="Trello">
+              <span class="tech-label">Trello</span>
+            </div>
+            <div class="tech">
+              <img class="tech-icon" src="html_finalprojimages/notion.svg" alt="Notion">
+              <span class="tech-label">Notion</span>
+            </div>
+          </div>
 
-
-        <!-- Add more skills here -->
-
-
+          <p class="label-stack">UI/UX Design</p>
+          <div id="design-tech" data-aos="fade-right" data-aos-delay="700" class="tech-row aos-init aos-animate">
+            <div class="tech">
+              <img class="tech-icon" src="html_finalprojimages/figma.svg" alt="Figma">
+              <span class="tech-label">Figma</span>
+            </div>
+            <div class="tech">
+              <img class="tech-icon" src="html_finalprojimages/adobexd.svg" alt="Adobe XD">
+              <span class="tech-label">Adobe XD</span>
+            </div>
+          </div>
       </div>
-    </section>
-          
-    <!-- Projects -->
-    <section class="projects" id="projects">
-      <h2>
-        Projects
-      </h2>
-      <div style="clear:both;"></div>
 
-        <div id="projects-container" class="projects-container">
-          <div class="project-card">
-            <h3>Dating website</h3>
-            <ul>
-              <li>Developed a secure Dating website, where you can macth with people according to your interest</li>
-            </ul>
+      <div class="stack-illustration">
+          <img id="stack-illustration" src="html_finalprojimages/stack.svg" alt="stack illustrations">
+      </div>
+    </section>          
+
+   
+  <!-- Projects -->
+    <section id="projects-div" class="projects-div container">
+      <p id="tech-stack-title">Projects</p>
+      <p id="tech-stack-text" style="background-color: transparent; text-align: center;">
+        Here's a list of softwares have worked on
+      </p>
+
+      <div style="height: 50px;"></div>
+
+      <div id="projects" class="projects">
+        <div class="project-card">
+          <div class="label p-type"><!--Open Source-->Coming soon</div>
+          <img class="p-image-bg" src="html_finalprojimages/moneytreebanner.png" alt="Monee tree">
+          <p class="body1 p-title">Money Tree</p>
+          <p id="tech-stack-text" style="background-color: transparent; text-align: left; padding-left: 3% ;">
+           An Expense tracker 
+          </p>
+          <div class="p-labels">
+            <a class="p-label" href="https://play.google.com/store/apps/details?id=com.hmz.al_quran" target="_blank">
+              <img class="p-label-icon" src="html_finalprojimages/android.svg"/>
+              <span class="label p-label-text">Android</span>
+            </a>
+            <a class="p-label" href="https://mhmzdev.github.io/quran/" target="_blank">
+              <img class="p-label-icon" src="html_finalprojimages/apple.svg"/>
+              <span class="label p-label-text">IOS</span>
+            </a>
+            <a class="p-label" href="https://github.com/mhmzdev/the-holy-quran-app" target="_blank">
+              <img class="p-label-icon" src="html_finalprojimages/github1.svg"/>
+              <span class="label p-label-text">GitHub</span>
+            </a>
           </div>
-          <hr>
-          <div class="project-card">
-            <h3>E-commerce website</h3>
-            <ul>
-              <li>Created an online dog accessories store, integrated it with a shopping cart, using stripe for payment gateway</li>
-            </ul>
+        </div>
+
+        <div class="project-card">
+          <div class="label p-type">Open Source</div>
+          <img class="p-image-bg" src="html_finalprojimages/DevPortfoliobanner.png" alt="Devfolio">
+          <p class="body1 p-title">Devfolio</p>
+          <p id="tech-stack-text" style="background-color: transparent; text-align: left; padding-left: 3% ;">
+            Portfolio's website
+           </p>
+          <div class="p-labels">
+            <a class="p-label" href="http://mhmzdev.github.io/devfolio" target="_blank">
+              <img class="p-label-icon" src="html_finalprojimages/web.svg"/>
+              <span class="label p-label-text">Web</span>
+            </a>
+            <a class="p-label" href="https://github.com/mhmzdev/devfolio" target="_blank">
+              <img class="p-label-icon" src="html_finalprojimages/github1.svg"/>
+              <span class="label p-label-text">GitHub</span>
+            </a>
           </div>
-          <hr>
-          <div class="project-card">
-            <h3>Blogs</h3>
-            <ul>
-              <li>Developed a blog to share various recipes</li>
-            </ul>
+        </div>
+        
+        <div class="project-card">
+          <div class="label p-type"><!--Product-->Coming soon</div>
+          <img class="p-image-bg" src="html_finalprojimages/blank.png" alt="Awesome Snackbar Content">
+          <p class="body1 p-title">Gros'Drop</p>
+          <p id="tech-stack-text" style="background-color: transparent; text-align: left; padding-left: 3% ;">
+           Streaming app
+           </p>
+          <div class="p-labels">
+            <a class="p-label" href="https://play.google.com/store/apps/details?id=com.hmz.al_quran" target="_blank">
+              <img class="p-label-icon" src="html_finalprojimages/android.svg"/>
+              <span class="label p-label-text">Android</span>
+            </a>
+            <a class="p-label" href="https://mhmzdev.github.io/quran/" target="_blank">
+              <img class="p-label-icon" src="html_finalprojimages/apple.svg"/>
+              <span class="label p-label-text">IOS</span>
+            </a>
+        
           </div>
+        </div>
+
+        <div class="project-card">
+          <div class="label p-type">Product</div>
+          <img class="p-image-bg" src="html_finalprojimages/Sydbanner.png" alt="COVID-19 Tracker">
+          <p class="body1 p-title">Syd</p>
+          <p id="tech-stack-text" style="background-color: transparent; text-align: left; padding-left: 3% ;">
+            Interactive game for livestreaming
+           </p>
+          <div class="p-labels">
+            <a class="p-label" href="https://drive.google.com/drive/folders/1tawGXgIgdoz8PH08BfMQc4c1OY91P2HP?usp=sharing" target="_blank">
+              <img class="p-label-icon" src="html_finalprojimages/unity.svg"/>
+              <span class="label p-label-text">Unity</span>
+            </a>
+        
+          </div>
+        </div>
+        
+        <div class="project-card">
+          <div class="label p-type"><!--Product-->Coming soon</div>
+          <img class="p-image-bg" src="html_finalprojimages/emocardbanner.png" alt="Storius">
+          <p class="body1 p-title">Emocard</p>
+          <p id="tech-stack-text" style="background-color: transparent; text-align: left; padding-left: 3% ;">
+            Mobile game and giftcard bidding marketplace
+           </p>
+          <div class="p-labels">
+            <a class="p-label" href="https://play.google.com/store/apps/details?id=com.hmz.al_quran" target="_blank">
+              <img class="p-label-icon" src="html_finalprojimages/android.svg"/>
+              <span class="label p-label-text">Android</span>
+            </a>
+            <a class="p-label" href="https://mhmzdev.github.io/quran/" target="_blank">
+              <img class="p-label-icon" src="html_finalprojimages/apple.svg"/>
+              <span class="label p-label-text">IOS</span>
+            </a>
+          </div>
+        </div>
+        
+        <div class="project-card">
+          <div class="label p-type"><!--Open Source-->Coming soon</div>
+          <img class="p-image-bg" src="html_finalprojimages/blank.png" alt="Sastaticket.pk">
+          <p class="body1 p-title">Lipbalm</p>
+          <p id="tech-stack-text" style="background-color: transparent; text-align: left; padding-left: 3% ;">
+            E-commerce website
+           </p>
+          <div class="p-labels">
+            <a class="p-label" href="http://mhmzdev.github.io/devfolio" target="_blank">
+              <img class="p-label-icon" src="html_finalprojimages/web.svg"/>
+              <span class="label p-label-text">Web</span>
+            </a>
+            <a class="p-label" href="https://github.com/mhmzdev/devfolio" target="_blank">
+              <img class="p-label-icon" src="html_finalprojimages/github1.svg"/>
+              <span class="label p-label-text">GitHub</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="see-more">
+          <a target="_blank" href="https://github.com/Pouloune" class="body2" id="see-more-btn">See More</a>
+      </div>
+
+    </section> 
+
+
+<!--
+    <section id="exp" class=" exp-div">
+      <p id="tech-stack-title">Experience</p>
+      <p id="tech-stack-text" style="background-color: transparent; text-align: center;">
+          Reflection of what I've been doing so far, so long.
+      </p>
+
+  <div class="exp-card">
+    <div class="exp-meta">
+      <h2 class="heading2 exp-org"></h2> Sastaticket.pk
+      <span class="label exp-position">Software Engineer</span>
+      <p class="body2 exp-session">jan 2022 - Present</p>
+      <span class="body2 exp-tech">Technologies</span>
+      <ul class="exp-tech-list">
+        <li class="body2 exp-tech-item">Flutter</li>
+        <li class="body2 exp-tech-item">Dart</li>
+        <li class="body2 exp-tech-item">GitHub Actions</li>
+        <li class="body2 exp-tech-item">Supabase</li>
+        <li class="body2 exp-tech-item">Firebase</li>
+        <li class="body2 exp-tech-item">Fintech - Payments</li>
+        <li class="body2 exp-tech-item">REST APIs</li>
+        <li class="body2 exp-tech-item">Dart package</li>
+      </ul>
     </div>
-    </section>
-    <div style="clear:both;"></div>
+    <ul class="exp-detail">
+      <li class="body2 exp-detail-item">Working with flutter_bloc state management, alongside provider to maintain local states and global use cases</li>
+      <li class="body2 exp-detail-item">Integrated payment gateways into flutter app with REST APIs</li>
+      <li class="body2 exp-detail-item">Handled local packages to maintain custom components and to maintain API architecture</li>
+      <li class="body2 exp-detail-item">Maintaining layered architecture for better encapsulation and abstraction of code from Application layer to domain layer and to data layer</li>
+      <li class="body2 exp-detail-item">Learned GitHub actions for CI/CD</li>
+      <li class="body2 exp-detail-item">Worked with various env. flavors in flutter app (dev, qa, stage, prod)</li>
+      <li class="body2 exp-detail-item">Learned concepts like ACL (Access Control List) for maintaining features in live app</li>
+      <li class="body2 exp-detail-item">Integration of REST APIs, Firebase and local cached concepts for better user experience</li>
+      <li class="body2 exp-detail-item">Added features in huge code base with scalability in mind, along with other concepts of OOP and design pattern.</li>
+      <li class="body2 exp-detail-item">Learned project management tools like Jira and Mural</li>
+      <li class="body2 exp-detail-item">Worked in Agile software methodology, worked in sprints and different team structures like Squads.</li>
+      <li class="body2 exp-detail-item">Helped in interviews and expanding team of developers.</li>
+    </ul>
+  </div> -->
+    </section>  
 
-    <!-- Recommendations -->
-    <section id="recommendations">
-      <h2>Recommendations</h2>
-      <div style="clear:both;"></div>
-      <div class="all_recommendations" id="all_recommendations">
-        <div class="recommendation">
-          <span>&#8220;</span>
-          Jane is a very quick learner and quickly grasps key concepts of Web development. 
-          She got a great attitude & she is an excellent team player. 
-          She has a curious mind and asks the right question. 
-          She takes initiative within a team and has potentials to lead the team.
-          <span>&#8221;</span>
-        </div>
-        <div class="recommendation">
-          <span>&#8220;</span>
-          Working with Jane has been an awesome experience. 
-          She is highly knowledgable and always goes the extra step to make sure everything is right. 
-          For any future projects that need her expertise I would definitely want to work with her again.
-          <span>&#8221;</span>
-        </div>
+    
 
-        <div class="recommendation">
-          <span>&#8220;</span>
-          I had worked along with Jane during the initial phase of our venture which needed Web development. 
-          She is a committed resource who has in depth knowledge about the domain. 
-          She will be an asset for any organisation! 
-          <span>&#8221;</span>
-        </div>
-      </div>
-    </section>
 
-    <!-- Recommendation Form -->
-    <section id="contact">
-      <div class="flex_center">
-        <fieldset>
-          <legend class="introduction">Leave a Recommendation</legend>          
-          <input type="text" placeholder="Name (Optional)"> <br/>
-          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
-          <div class="flex_center">
-            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+    <div id="contact-div" class="contact-div">
+      <p id="tech-stack-title">Get in touch</p>
+      <p id="tech-stack-text" style="background-color: transparent; text-align: center;">
+          Let's build something together :)
+      </p>
+
+      <div class="contact-row">
+          <div class="current-date-div">
+              <div class="current-date-container">
+                  <div class="current-month">
+                      <span id="month">January</span>
+                  </div>
+                  <div class="current-date">
+                      <span id="date">5</span>
+                  </div>
+                  <div class="current-day">
+                      <span id="day">Friday</span>
+                  </div>
+              </div>
+
+              <button type="button" onclick="onMeetClick()" class="btn btn-success" id="meet-btn">
+                  <img id="meet-icon" src="html_finalprojimages/videocam.svg" />
+                  <span id="meet-btn-text">Let's have a 30 min call</span>
+              </button>
           </div>
-        </fieldset>
+
+          <div id="contact-info-div" class="contact-info-div">
+            <a class="contact-card" href="dasseshella@gmail.com" target="_blank">
+              <img id="mail-icon" src="html_finalprojimages/letter.svg"/>
+              <span class="body2 contact-label">dasseshella@gmail.com</span>
+              <img id="chevron-icon" src="html_finalprojimages/arrow_right.svg"/>
+            </a>
+            <a class="contact-card" href="https://wa.me/message/FIYGEMKENCOOG1" target="_blank">
+              <img id="mail-icon" src="html_finalprojimages/phone.svg"/>
+              <span class="body2 contact-label">+1 347 791 8269</span>
+              <img id="chevron-icon" src="html_finalprojimages/arrow_right.svg"/>
+            </a>
+              <div class="line"></div>
+              <div id="social-contact-icons" class="social-contact-icons">
+                <a class="social-icon-wrapper" href="https://linkedin.com/in/shella-youdgeny-dasse-408b28176" target="_blank" style="padding: 3%;">
+                  <img class="social-icon" src="html_finalprojimages/linkedin.svg"/>
+                </a>
+                <div></div>
+                <a class="social-icon-wrapper" href="https://github.com/Pouloune" target="_blank" style="padding: 3%;">
+                  <img class="social-icon" src="html_finalprojimages/github.svg"/>
+                </a>
+                <div></div>
+                <a class="social-icon-wrapper" href="https://facebook.com/shellayoudgenymoupounedasse/" target="_blank" style="padding: 3%;">
+                  <img class="social-icon" src="html_finalprojimages/facebook.svg"/>
+                </a>
+                <div></div>
+                <a class="social-icon-wrapper" href="https://instagram.com/miss_pouloune" target="_blank" style="padding: 3%;">
+                  <img class="social-icon" src="html_finalprojimages/instagram.svg"/>
+                </a>
+                <div></div>
+                <a class="social-icon-wrapper" href="https://x.com/MPouloune" target="_blank" style="padding: 3%;">
+                  <img class="social-icon" src="html_finalprojimages/x.svg"/>
+                </a>
+                <div></div>
+              </div>
+
+          </div>
       </div>
-    </section>
+  </div>
 
     <div class="iconbutton">
       <a href="#home">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-          </svg>
+        <img  src="html_finalprojimages/arrow_upward.svg"/>
         <!--Add the code here for the logo to appear and the icon to be actionable-->
       </a>
     </div>
 
-    <div class="popup" id="popup" class="flex_center">
-      <img src="html_finalprojimages/checkmark--outline.svg"/>
-      <h3>Your recommendation is really appreciated!</h3>
-      <button onclick="showPopup(false)">Ok</button>
-    </div>
+   
+
+   
   </body>
 </html>
