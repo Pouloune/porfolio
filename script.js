@@ -111,7 +111,9 @@ function appearElementNav(){
 }
 
 
-function downloadResume(){}
+function downloadResume(){
+  window.open("https://drive.google.com/file/d/1dxjJoa_hB8pi_AVMkNEkNLY36rFXmI8n/view?usp=sharing", '_blank');
+}
 
 function onMeetClick() {
   window.open("https://calendly.com/dasseshella/30min", '_blank');
